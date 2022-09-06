@@ -40,3 +40,4 @@ ggplot(temp_data,
   ylab("Gini") +
   ggtitle("Gini coefficients for Nordic countries")
 #This example is based on great webpages of CORE: https://www.core-econ.org/doing-economics/book/text/05-03.html#extension-r-walk-through-55-calculating-gini-coefficients-for-all-countries-and-all-years-using-a-loop. Take a look!
+
