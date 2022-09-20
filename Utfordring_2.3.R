@@ -97,7 +97,7 @@ map4 <- ggplot(mapdata1, aes(x = long, y = lat, group = group)) +
   geom_polygon(aes(fill = coord), col = "black")
 map4
 
-map4.1 <- map4 + (name = "Koordinering av lonnfastsettelse") +
+map4.1 <- map4 + scale_fill_brewer(name = "Koordinering av lonnfastsettelse", palette = "Set1") +
   theme(axis.text.x = element_blank(),
         axis.text.y = element_blank(),
         axis.ticks = element_blank(),
@@ -105,19 +105,3 @@ map4.1 <- map4 + (name = "Koordinering av lonnfastsettelse") +
         axis.title.y = element_blank(),
         rect = element_blank())
 map4.1
-
-#####
-
-map4 <- ggplot(mapdata1, aes(x = long, y = lat, group = group)) +
-  geom_polygon(aes(fill = coord), col = "black")
-map4
-
-map4.1 <- map4 +
-  theme(axis.text.x = element_blank(),
-        axis.text.y = element_blank(),
-        axis.ticks = element_blank(),
-        axis.title.x = element_blank(),
-        axis.title.y = element_blank(),
-        rect = element_blank())
-map4.1
-
