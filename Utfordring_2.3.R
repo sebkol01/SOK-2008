@@ -71,8 +71,12 @@ map2.1
 # Plotting a map showing excess coverage
 
 
+# Making excess coverage variable
+
+mapdata1$ExcessCoverage <- mapdata1$coverage - mapdata1$density
+
 map3 <- ggplot(mapdata1, aes(x = long, y = lat, group = group)) +
-  geom_polygon(aes(fill = coverage), col = "black")
+  geom_polygon(aes(fill = ExcessCoverage), col = "black")
 map3
 
 map3.1 <- map3 + scale_fill_gradient(name = "Excess Coverage", low = "red", high = "green", na.value = "grey50") +
