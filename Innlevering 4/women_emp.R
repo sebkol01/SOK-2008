@@ -28,4 +28,4 @@ women%>%
 
 library(gridExtra)
 library(grid)
-grid.arrange(kids_0_2,kids_6_14, nrow = 1,  top = textGrob("Sammenhengen mellom foreldrepermisjons lengde og mødres yrkesdelakelse etter yngste barns alder",gp=gpar(fontsize=20,font=3)))
+grid.arrange(kids_0_2,kids_6_14, nrow = 1,  top = textGrob("Sammenhengen mellom foreldrepermisjons lengde og mødres yrkesdeltakelse etter yngste barns alder",gp=gpar(fontsize=20,font=3)))
